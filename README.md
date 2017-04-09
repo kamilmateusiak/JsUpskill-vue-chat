@@ -1,6 +1,6 @@
-# vueLama
+# JsUpskill
 
-> Workout App - Vuejs
+> Chat - Vuejs
 
 ## Build Setup
 
