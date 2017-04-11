@@ -1,92 +1,103 @@
-<style>
-  .select-user__error {
-    color: red;  
-  }
-  .avatars {
-    width: 40px;
-    height: 40px;
-    float: left;
-    cursor: pointer;
-  }
-  .avatars-container {
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  .avatar--active {
-    border: 1px solid black;
-  }
-  .user-avatar {
-    height: 20px;
-    width: 20px;
-  }
-  .user-info {
-    float: right;
-    clear: right;
-  }
-  .panel-icon {
-    width: 20px;
-  }
-  .chat-messages {
-    max-height: 300px;
-    overflow-y: auto;
-  }
-  .main-block {
-    /*margin-top: 100px;*/
-  }
-  .main-container {
-    min-height: 100vh;
-    position: relative;
-  }
-</style>
-
-<div class="main-container">
-  <div class="columns is-mobile main-block">
-    <div class="column is-half is-offset-one-quarter main-block">
-      <label>Podaj nick: </label>
-      <p class="control">
-        <input class="input" type="text">
-      </p>  
-      <p class="select-user__error">Ooops</p>
-      <label>Wybierz avatar: </label>
-      <div class="avatars-container">
-        <div class="avatars" id="avatar-1">
-          <img src="./src/assets/1.jpg"/>
-        </div>
-        <div class="avatars" id="avatar-2">
-          <img src="./src/assets/2.jpg"/>
-        </div>
-      </div>
-      <p class="control">
-        <button class="button is-primary">Dalej</button>
-      </p>
-    </div>
-  </div>
-  <div class="columns is-mobile main-block">
-    <div class="column is-half is-offset-one-quarter main-block">
-      <nav class="panel">
-        <p class="panel-heading">
-          Chat
-        </p>
-        <div class="panel-block">
-          <button class="button is-primary is-outlined is-fullwidth">
-            Pokaż więcej
-          </button>
-        </div>
-        <div class="chat-messages">
-          <a class="panel-block">
-            <span class="panel-icon">
-              <img class="user-avatar" src="./src/assets/1.jpg">
-            </span>
-            <span>message</span>
-          </a>
-        </div>
-        <div class="panel-block">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/toastr.css">
+    <link rel="stylesheet" href="./css/bulma.css" />
+    <style>
+      .select-user__error {
+        color: red;  
+      }
+      .avatars {
+        width: 40px;
+        height: 40px;
+        float: left;
+        cursor: pointer;
+      }
+      .avatars-container {
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .avatar--active {
+        border: 1px solid black;
+      }
+      .user-avatar {
+        height: 20px;
+        width: 20px;
+      }
+      .user-info {
+        float: right;
+        clear: right;
+      }
+      .panel-icon {
+        width: 20px;
+      }
+      .chat-messages {
+        max-height: 300px;
+        overflow-y: auto;
+      }
+      .main-block {
+        /*margin-top: 100px;*/
+      }
+      .main-container {
+        min-height: 100vh;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="columns is-mobile main-block">
+        <div class="column is-half is-offset-one-quarter main-block">
+          <label>Podaj nick: </label>
           <p class="control">
-            <input class="input is-small" type="text" placeholder="wiadomość...">
+            <input class="input" type="text">
+          </p>  
+          <p class="select-user__error">Ooops</p>
+          <label>Wybierz avatar: </label>
+          <div class="avatars-container">
+            <div class="avatars" id="avatar-1">
+              <img src="./src/assets/1.jpg"/>
+            </div>
+            <div class="avatars" id="avatar-2">
+              <img src="./src/assets/2.jpg"/>
+            </div>
+          </div>
+          <p class="control">
+            <button class="button is-primary">Dalej</button>
           </p>
         </div>
-      </nav>
+      </div>
+      <div class="columns is-mobile main-block">
+        <div class="column is-half is-offset-one-quarter main-block">
+          <nav class="panel">
+            <p class="panel-heading">
+              Chat
+            </p>
+            <div class="panel-block">
+              <button class="button is-primary is-outlined is-fullwidth">
+                Pokaż więcej
+              </button>
+            </div>
+            <div class="chat-messages">
+              <a class="panel-block">
+                <span class="panel-icon">
+                  <img class="user-avatar" src="./src/assets/1.jpg">
+                </span>
+                <span>message</span>
+              </a>
+            </div>
+            <div class="panel-block">
+              <p class="control">
+                <input class="input is-small" type="text" placeholder="wiadomość...">
+              </p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <a style="position: absolute; bottom: 0; font-size: 10px;" href="http://www.freepik.com">Icons designed by Rwdd_Studios / Freepik</a>
     </div>
-  </div>
-  <a style="position: absolute; bottom: 0; font-size: 10px;" href="http://www.freepik.com">Icons designed by Rwdd_Studios / Freepik</a>
-</div>
+
+  </body>
+</html>
